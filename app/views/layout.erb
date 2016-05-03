@@ -5,13 +5,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
   </head>
-  <body>
-
+  <body> 
+    <nav class="nigga">
+      <ul>
+        <% if logged_in? %>
+            <li>Welcome, <%= current_user.username %></li>
+            <li><a href="/tweet">Post a Tweet!</a></li>
+            <li><a href="/logout">Logout</a></li>
+        <% end %>
+      </ul>
+    </nav>
     <div class="container">
-      <h1>Welcome to Fwitter!</h1>
-      <%= yield %> 
-      
-      
+
+      <h1>Welcome to Fwitter Yo!</h1>
+
+      <%= yield %>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

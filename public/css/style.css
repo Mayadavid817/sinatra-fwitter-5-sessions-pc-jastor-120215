@@ -11,3 +11,19 @@
 .footer {
   margin-top: 25px;
 }
+
+.nigga {
+  margin-top: 25px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.nigga ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.h1{
+  color: red;
+
+}
